@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = 'main.js'></script>
+    <style>
+        button{
+            display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    padding: 14px 24px;
+                    border: none;
+                    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                    background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+                    color: #fff;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" integrity="sha512-bcfltY+lNLlNxz38yBBm/HLaUB1gTV6I0e+fahbF9pS6roIdzUytozWdnFV8ZnM6cSAG5EbmO0ag0a/fLZSG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Selfie App</title>
+</head>
+<body>
+    <!-- <script src = 'geolocator.js'></script> -->
+    <h1>Data Selfie App</h1>
+    <!-- <script>
+        function setup() {
+            noCanvas();
+            const video = createCapture(VIDEO);
+            video.size(320,240);
+        }
+    </script> -->
+    <a href="index.html">Homepage</a>
+    <a href="/logs">Database View</a>
+    <form >
+        <label for="fname">What's your name? </label>
+        <input type="text" id="fname" name="fname"><br><br>
+    </form>
+    <button onclick="geolocate()">Geolocate</button>
+    <p>This is your Latitude: <span id = "latitude"></span>&deg; <br></p>
+    <p>This is your Longitude: <span id = "longitude"></span>&deg; <br></p>
+    <div id="weather-data"></div>
+
+</body>
+</html>
+
